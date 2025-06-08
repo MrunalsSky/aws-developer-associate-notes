@@ -10,12 +10,12 @@ This document focuses on the most critical security step for any new AWS account
 - **The Default State:** Without MFA, access is controlled only by **Single-Factor Authentication (SFA)**—the root user's email and password.
 - **The Attack Scenario:** An attacker ("the evil clown") could acquire these credentials through various means like social engineering, phishing, or a data breach on another website where the same password was used.
 - **The Impact:** With just the username and password, the attacker can log in, impersonate the legitimate owner, delete all resources, steal sensitive data, or run expensive resources (like for crypto-mining) that lead to massive bills.
-  ![alt text](.\assets\images\image-1.png)
+  ![alt text](./assets/images/image-1.png)
 
 #### **3. The Solution: Implementing a Second Factor**
 
 - **Adding the "Possession" Factor:** The demo illustrates adding a second factor: "something you **have**." This can be a physical hardware token or, as shown in the demo, a **virtual MFA device**.
-  ![alt text](.\assets\images\image-1.png)
+  ![alt text](./assets/images/image-1.png)
 - **How it Stops the Attack:** Even if the attacker has the correct username and password, they are stopped at the next login step, which asks for the rotating code. Since they do not possess the user's physical or virtual MFA device, they cannot provide the correct code and are denied access.
 
 #### **4. Step-by-Step Demo Walkthrough in the AWS Console**
