@@ -10,8 +10,8 @@ In simple terms, it's an **extra layer of security** on top of your standard use
 
 #### **2. The Problem: The Weakness of Single-Factor Authentication (SFA)**
 
-- **Definition [00:34]:** Standard login systems that only use a **username and password** are considered Single-Factor Authentication (SFA).
-- **The Core Risk [00:37]:** If these two pieces of information (your username and password) are compromised, an attacker can completely impersonate you.
+- **Definition:** Standard login systems that only use a **username and password** are considered Single-Factor Authentication (SFA).
+- **The Core Risk:** If these two pieces of information (your username and password) are compromised, an attacker can completely impersonate you.
 - **How Passwords Get Compromised:**
   - **Phishing:** Tricking users into entering credentials on a fake website.
   - **Password Reuse:** A user uses the same password on a less secure site, which gets breached. Attackers then try that password on other major services like AWS.
@@ -24,7 +24,7 @@ Because SFA relies on only one "factor" (something you know), its security is fr
 
 #### **3. The Authentication "Factors": The Building Blocks of MFA**
 
-MFA works by combining two or more "factors" from different categories. A factor is a distinct piece of evidence used to prove your identity. The video outlines four common types:
+MFA works by combining two or more "factors" from different categories. A factor is a distinct piece of evidence used to prove your identity. There are four common types:
 
 **A. Knowledge ("Something you know")**
 
@@ -57,7 +57,7 @@ MFA works by combining two or more "factors" from different categories. A factor
 
 #### **4. How MFA is Implemented in AWS (The Virtual MFA Process)**
 
-The video provides a clear, step-by-step visual of how a virtual MFA device is set up and used with AWS.
+Step-by-step flow of how a virtual MFA device is set up and used with AWS.
 
 **Step 1: Initiation & Secret Key Generation**
 
